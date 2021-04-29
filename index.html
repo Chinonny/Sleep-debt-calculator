@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Sleep debt Calculator</title>
+</head>
+
+<body>
+    <!--Header section-->
+    <header class="header">
+        <nav class="navbar" id="header">
+            <div class="logo">Lifestyle</div>
+            <ul class="list-items" id="list-items">
+                <li class="items active"><a href="#home">Home</a></li>
+                <li class="items"><a href="#calculator">Calculator</a></li>
+                <li class="items"><a href="#contact">contact</a></li>
+            </ul>
+            <div class="icon-toggle" id="icon-toggle"><i class="material-icons" style="font-size:28px;">menu</i></div>
+        </nav>
+    </header>
+
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-info" id="home-info">
+            <div class="container">
+                <img src="background.jpg" alt=""> 
+                <div class="home-content">
+                    <p>Did you know that giraffes sleep 4.6 hours a day? We humans needs to sleep more than that. If we
+                        don’t sleep enough, we accumulate sleep debt. In this app we’ll calculate if you’re getting
+                        enough sleep each week using a sleep debt calculator that recommends atleast 8hours a day.</p>
+                    <a href="#calculator"><button class="btn">Start</button></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--calculator section-->
+    <section class="calculator" id="calculator">
+        <h2 class="text">Sleep Debt Calculator</h2>
+        <form action="/" method="GET" class="form-input" id="form">
+            <div class="row" id="form-control">
+                <div class="col-25">
+                    <label for="fname">Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="userName" name="fname">
+                    <div class="row">
+                        <small class="error">Error Message</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row" id="form-control">
+                <div class="col-25">
+                    <label for="fday">Day:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="day" name="fday">
+                    <div class="row">
+                        <small class="error">Error Message</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="form-control">
+                <div class="col-25">
+                    <label for="fnumber">Actual sleep hours:</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="number" name="fnumber">
+                    <div class="row">
+                        <small class="error">Error Message</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" class="submit-btn" value="Calculate">
+                <div id="textDiv">Your result appears here!</div>
+            </div>
+        </form>
+    </section>
+
+    <!--footer section-->
+    <section id="contact">
+        <div class="footer">
+            <p>Lifestyle designs. &copy; copyright 2021</p>
+            <div class="icons">
+               <a href="http://www.gmail.com" target="_blank"><i class="material-icons">gmail</i></a>
+               <a href=""><i class="material-icons">call</i></a> 
+               <a href="http://www.facebook.com" target="_blank"><i class="material-icons">facebook</i></a> 
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

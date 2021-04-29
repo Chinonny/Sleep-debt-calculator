@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+html,body, .home-info {
+    box-sizing: border-box;
+    height: 100%;
+    background-color: brown;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: wheat;
+    color: brown;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.sticky {
+    top: 0;
+}
+/* navbar section */
+.navbar {
+    width: 90%;
+    padding: 2rem 1.5rem 1.5rem;
+    margin: 0 auto;  
+}
+.logo {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-family: 'Yatra One', 'cursive';
+}
+.icon-toggle {
+    display: none;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a {
+    text-decoration: none;
+    font-family: 'Yatra One', 'cursive';
+    color: brown;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.list-items {
+    float: right;
+}
+.list-items .items {
+    display: inline-block;
+    margin-left: 3rem;
+    box-shadow: -7px -7px 17px wheat,
+    7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+.list-items .items:hover {
+    border: 1px solid brown;
+    border-radius: .5rem;
+    transition: all ease-in-out;
+}
+.items.active {
+    border: 1px solid brown;
+    border-radius: .5rem;
+    color: wheat;
+}
+
+/* home section */
+section {
+    width: 100%;
+}
+.container {
+    position: relative;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid brown;
+    border-radius: 10px;
+    box-shadow: -7px -7px 17px rgb(34, 34, 34),
+    7px 7px 17px rgba(70, 70, 70, 0.15);
+}
+.container img {
+    margin-top: 30px;
+    width: 100%;
+    vertical-align: middle;
+}
+.container .home-content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 30px;
+    width: 100%;
+    height: 250px;
+}
+.container .home-content p {
+    font-size: 1rem;
+    font-family: 'Yatra One', 'cursive';
+    width: 65%;
+    font-size: 1.2rem;
+}
+.container .home-content .btn {
+    margin-top: 1rem;
+    padding: 10px 50px;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.home-info .btn:hover {
+    background-color: rgb(75, 35, 35);
+    color: white;
+}
+ .display {
+    display: none;
+}
+/* calculator section */
+.calculator {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(61, 15, 15, 0.795);
+    color: white;
+    padding: 6rem 0 6rem 0;
+}
+.calculator .text {
+   text-align: center;
+   margin-bottom: 2rem;
+   font-family: 'Yatra One', 'cursive';
+}
+.form-input {
+    position: relative;
+    width: 50%;
+    background-color: white;
+    color: brown;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 20px;
+       border-radius: 10px;
+       box-shadow:inset 7px 7px 17px wheat,
+       -7px -7px 17px rgba(70, 70, 70, 0.15);
+   }
+input[type=text],
+input[type=number],
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  resize: vertical;
+  border: 1px solid white;
+  box-shadow:
+  inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em wheat;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.3rem;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  .calculator .submit-btn {
+      padding: 8px 40px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      outline: none;
+      cursor: pointer;
+      background-color: wheat;
+      color: brown;
+      font-size: 1.2rem;
+      font-family: 'Yatra One', 'cursive';
+      box-shadow: 0 0 10px 2px rgb(0 0 0 / 10%);
+      outline: none;
+  }
+  .form-input small {
+    position: absolute;
+    visibility: hidden;
+    margin-top: -1.5rem;
+    margin-left: 50px;
+    margin-bottom: 2rem;  
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: brown;
+}
+
+#textDiv {
+ width: 90%;
+ margin: auto;
+ margin-bottom: 1rem;
+ padding: 1rem;
+ word-wrap: wrap;
+ font-size: 1.2rem;
+ border: 1px solid white;
+ box-shadow:
+ inset 0 -3em 3em rgba(0,0,0,0.1),
+       0 0  0 2px rgb(255,255,255),
+       0.3em 0.3em 1em wheat;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: wheat;
+    color: brown;
+    font-family: 'Yatra One', 'cursive';
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    margin: 2rem 0 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.footer .icons a {
+    color: brown;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 768px) {
+   .list-items {
+       position: fixed;
+       height: 70vh;
+       width: 100%;
+       margin-top: 1.5rem;
+       left: -100%;
+       transition: 0.5s ease-in-out;
+       background-color: wheat;
+       text-align: center;
+    }
+    .list-items .items {
+        float: none;
+        width: 80%;
+        margin: 1.2rem auto;
+    }
+    .icon-toggle {
+        display: block;
+        float: right;
+        font-weight: bold;
+        margin-top: -.7rem;
+        border: 1px solid wheat;
+        box-shadow:inset 7px 7px 17px wheat,
+    -7px -7px 17px rgba(70, 70, 70, 0.15);
+         padding: .3rem;
+         cursor: pointer;
+    }    
+    .active {
+        left: 0;
+    }
+    .icon-toggle:hover {
+        box-shadow: 7px 7px 17px wheat,
+        7px 7px 17px rgba(70, 70, 70, 0.15);
+        border: 1px solid brown;
+    }
+    .calculator {
+        width: 100%;
+    }
+    .container {
+        height: auto;
+        overflow: hidden;
+    }
+   .container img {
+       margin-top: 70px;
+   }
+   .container .home-content {   
+       height: 219px;
+    
+   }
+   .container .home-content p {
+       width: 100%;
+       text-align: justify;
+       margin-top: 20px;
+       font-size: 3vw;
+   }
+   .container .home-content .submit-btn {
+    margin-top: .5rem;
+    padding: 10px 40px;
+}
+   .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .calculator .submit-btn {
+    width: 100%;
+    margin-top: 0;
+    font-size: 4vw;
+    text-align: center;
+  }
+  label {
+      font-size: 1.1rem;
+  }
+  small {
+      font-size: 2vw;
+  }
+   
+}
+
+@media screen and (max-width: 1100px) {
+    .container {
+        height: auto;
+        overflow: hidden;
+    }
+    .container .home-content {
+        bottom: 0;
+    }
+}
